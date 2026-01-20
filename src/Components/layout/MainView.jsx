@@ -1,5 +1,7 @@
 import {Block,Button} from '../common';
-import {printPDF} from '../../utils/quatationPDF';
+import {generatePaymentReceiptPDF,generateQuotationPDF,
+  generateDeliveryStickerPDF,generateShippingLabelPDF
+} from '../../utils';
 
 export default function MainView() {
   return (
@@ -12,7 +14,7 @@ export default function MainView() {
             color="#1e40af"
             description="Genera una cotizacion en formato PDF de manera rapida y sencilla"
             component={
-              <Button  onClick={printPDF} />
+              <Button  onClick={generateQuotationPDF} />
             }
           />
           <Block 
@@ -20,15 +22,23 @@ export default function MainView() {
             color="#059669"
             description="Genera una boleta en formato PDF creciente segun cantidad de productos"
             component={
-              <Button onClick={printPDF} />
+              <Button onClick={generatePaymentReceiptPDF} />
             }
           />
           <Block 
-            label="Reporte PDF"
+            label="Sticker de Entrega PDF"
             color="#7c3aed"
-            description="Exporta reportes completos de operaciones"
+            description="Crea stickers de entrega personalizados en formato PDF"
             component={
-              <Button onClick={printPDF} />
+              <Button onClick={generateDeliveryStickerPDF} />
+            }
+          />
+          <Block 
+            label="Etiqueta de Envío PDF"
+            color="#d97706"
+            description="Crea etiquetas de envío profesionales en formato PDF"
+            component={
+              <Button onClick={generateShippingLabelPDF} />
             }
           />
         </div>

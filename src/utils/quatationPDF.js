@@ -65,7 +65,7 @@ const idprincipal = {
     let igv=imp*0.18;
     let ttl=imp+igv;
 
-export const printPDF = () => {
+export const quatationPDF = () => {
         const doc = new jsPDF();
         
         // Agregar logo y encabezado al inicio
