@@ -14,7 +14,7 @@ export default function MainView() {
             color="#1e40af"
             description="Genera una cotizacion en formato PDF de manera rapida y sencilla"
             component={
-              <Button  onClick={generateQuotationPDF} />
+              <Button  onClick={generateQuotationPDF} color="#1e40af" />
             }
           />
           <Block 
@@ -22,7 +22,9 @@ export default function MainView() {
             color="#059669"
             description="Genera una boleta en formato PDF creciente segun cantidad de productos"
             component={
-              <Button onClick={generatePaymentReceiptPDF} />
+              <Button onClick={generatePaymentReceiptPDF} 
+              color="#059669"
+              />
             }
           />
           <Block 
@@ -30,7 +32,9 @@ export default function MainView() {
             color="#7c3aed"
             description="Crea stickers de entrega personalizados en formato PDF"
             component={
-              <Button onClick={generateDeliveryStickerPDF} />
+              <Button onClick={generateDeliveryStickerPDF}
+              color="#7c3aed"
+              />
             }
           />
           <Block 
@@ -38,7 +42,9 @@ export default function MainView() {
             color="#d97706"
             description="Crea etiquetas de envío profesionales en formato PDF"
             component={
-              <Button onClick={generateShippingLabelPDF} />
+              <Button onClick={generateShippingLabelPDF} 
+              color="#d97706"
+              />
             }
           />
         </div>
