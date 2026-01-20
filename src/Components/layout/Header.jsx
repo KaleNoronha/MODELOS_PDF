@@ -1,15 +1,15 @@
 
 export default function Navbar() {
   return (
-    <div className='bg-gradient-to-r from-blue-900 to-blue-700 shadow-2xl'>
-      <header className='py-8 px-10 border-b border-blue-500/30'>
+    <div className='bg-gradient-to-r from-black via-gray-800 to-gray-700 shadow-2xl'>
+      <header className='py-8 px-10 border-b border-white/30'>
         <div className='flex items-center gap-4'>
-          <div className='w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center'>
+          <div className='w-12 h-12 bg-white-500 rounded-lg flex items-center justify-center'>
             <span className='text-white font-bold text-xl'>ML</span>
           </div>
           <div>
             <h1 className='text-white text-3xl font-bold'>PLANTILLAS PDF</h1>
-            <p className='text-blue-200 text-sm'>JSPDF-AUTOTABLE</p>
+            <p className='text-white text-sm'>JSPDF-AUTOTABLE</p>
           </div>
         </div>
       </header>
